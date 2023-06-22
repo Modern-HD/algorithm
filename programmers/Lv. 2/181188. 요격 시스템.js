@@ -13,7 +13,7 @@ function solution(targets) {
     for (let i = min; i <= max; i++) {
         if (!map.has(i)) continue;
         if (limit > map.get(i)) limit = map.get(i);
-        if (limit <= i && map.has(i)) {
+        if (limit <= i) {
             answer++;
             limit = map.get(i);
             continue;
